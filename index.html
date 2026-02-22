@@ -39,11 +39,16 @@
     </header>
 
     <main id="main">
+      <!-- HERO -->
       <section class="hero" aria-label="Hero">
+        <div class="hero__bg" aria-hidden="true">
+          <img src="./images/lifestyle.jpg" alt="" class="hero__bg-img" />
+          <div class="hero__bg-overlay"></div>
+        </div>
         <div class="container hero__inner">
           <div class="hero__content">
             <p class="eyebrow">South Florida Photography by D.Suave</p>
-            <h1 class="hero__title">EVERY FRAME TELLS A STORY</h1>
+            <h1 class="hero__title">EVERY FRAME<br/>TELLS A STORY</h1>
             <p class="hero__subtitle">
               We craft timeless visual narratives. One frame of passion at a time.
             </p>
@@ -52,76 +57,132 @@
               <a class="btn btn--ghost" href="#services">Explore Services</a>
             </div>
           </div>
-
-          <div class="hero__panel" aria-hidden="true">
-            <div class="hero__panel-inner">
-              <div class="hero__panel-line"></div>
-              <div class="hero__panel-line"></div>
-              <div class="hero__panel-line"></div>
-              <div class="hero__panel-caption">
-                <span class="hero__panel-caption-label">TPM</span>
-                <span class="hero__panel-caption-text">Cinematic • Modern • Timeless</span>
-              </div>
-            </div>
-          </div>
         </div>
-
         <div class="hero__fade" aria-hidden="true"></div>
       </section>
 
+      <!-- SERVICES -->
       <section class="section" id="services" aria-label="Services">
         <div class="container">
           <header class="section__header">
-            <h2 class="section__title">WHAT WE CAPTURE</h2>
+            <p class="eyebrow eyebrow--center">WHAT WE CAPTURE</p>
+            <h2 class="section__title">EVERY SESSION.<br/>EVERY STORY.</h2>
             <p class="section__subtitle">
-              Premium photography crafted with intention—clean composition, bold contrast, and story-first direction.
+              Premium photography crafted with intention — clean composition, bold contrast, story-first direction.
             </p>
           </header>
 
-          <div class="grid grid--services">
-            <article class="card">
-              <h3 class="card__title">Lifestyle</h3>
-              <p class="card__desc">Natural moments, elevated with cinematic detail.</p>
+          <div class="services-grid">
+
+            <article class="service-card service-card--wide">
+              <div class="service-card__img-wrap">
+                <img src="./images/lifestyle.jpg" alt="Lifestyle photography" class="service-card__img" loading="lazy" />
+              </div>
+              <div class="service-card__overlay"></div>
+              <div class="service-card__body">
+                <div class="service-card__accent" aria-hidden="true"></div>
+                <h3 class="service-card__title">Lifestyle</h3>
+                <p class="service-card__desc">Natural moments, elevated with cinematic detail.</p>
+                <a class="service-card__cta" href="#contact">Book Now →</a>
+              </div>
             </article>
 
-            <article class="card">
-              <h3 class="card__title">Headshots</h3>
-              <p class="card__desc">Confident portraits for brands, teams, and talent.</p>
+            <article class="service-card">
+              <div class="service-card__img-wrap">
+                <img src="./images/headshots.jpg" alt="Headshot photography" class="service-card__img" loading="lazy" />
+              </div>
+              <div class="service-card__overlay"></div>
+              <div class="service-card__body">
+                <div class="service-card__accent" aria-hidden="true"></div>
+                <h3 class="service-card__title">Headshots</h3>
+                <p class="service-card__desc">Confident portraits for brands, teams, and talent.</p>
+                <a class="service-card__cta" href="#contact">Book Now →</a>
+              </div>
             </article>
 
-            <article class="card">
-              <h3 class="card__title">Family</h3>
-              <p class="card__desc">Warm, timeless frames you’ll keep forever.</p>
+            <article class="service-card">
+              <div class="service-card__img-wrap">
+                <img src="./images/family.jpg" alt="Family photography" class="service-card__img" loading="lazy" />
+              </div>
+              <div class="service-card__overlay"></div>
+              <div class="service-card__body">
+                <div class="service-card__accent" aria-hidden="true"></div>
+                <h3 class="service-card__title">Family</h3>
+                <p class="service-card__desc">Warm, timeless frames you'll keep forever.</p>
+                <a class="service-card__cta" href="#contact">Book Now →</a>
+              </div>
             </article>
 
-            <article class="card">
-              <h3 class="card__title">Real Estate</h3>
-              <p class="card__desc">Clean lines, true color, and standout spaces.</p>
+            <article class="service-card">
+              <div class="service-card__img-wrap">
+                <img src="./images/real-estate.jpg" alt="Real estate photography" class="service-card__img" loading="lazy" />
+              </div>
+              <div class="service-card__overlay"></div>
+              <div class="service-card__body">
+                <div class="service-card__accent" aria-hidden="true"></div>
+                <h3 class="service-card__title">Real Estate</h3>
+                <p class="service-card__desc">Clean lines, true color, and standout spaces.</p>
+                <a class="service-card__cta" href="#contact">Book Now →</a>
+              </div>
             </article>
 
-            <article class="card">
-              <h3 class="card__title">Weddings</h3>
-              <p class="card__desc">Story-driven coverage from vows to afterglow.</p>
+            <article class="service-card service-card--wide">
+              <div class="service-card__img-wrap">
+                <img src="./images/weddings.jpg" alt="Wedding photography" class="service-card__img" loading="lazy" />
+              </div>
+              <div class="service-card__overlay"></div>
+              <div class="service-card__body">
+                <div class="service-card__accent" aria-hidden="true"></div>
+                <h3 class="service-card__title">Weddings</h3>
+                <p class="service-card__desc">Story-driven coverage from vows to afterglow.</p>
+                <a class="service-card__cta" href="#contact">Book Now →</a>
+              </div>
             </article>
 
-            <article class="card">
-              <h3 class="card__title">Creative Concepts</h3>
-              <p class="card__desc">Bold ideas brought to life with precision.</p>
+            <article class="service-card">
+              <div class="service-card__img-wrap">
+                <img src="./images/creative.jpg" alt="Creative concepts photography" class="service-card__img" loading="lazy" />
+              </div>
+              <div class="service-card__overlay"></div>
+              <div class="service-card__body">
+                <div class="service-card__accent" aria-hidden="true"></div>
+                <h3 class="service-card__title">Creative Concepts</h3>
+                <p class="service-card__desc">Bold ideas brought to life with precision.</p>
+                <a class="service-card__cta" href="#contact">Book Now →</a>
+              </div>
             </article>
 
-            <article class="card">
-              <h3 class="card__title">Boudoir</h3>
-              <p class="card__desc">Tasteful, empowering imagery with intention.</p>
+            <article class="service-card">
+              <div class="service-card__img-wrap">
+                <img src="./images/headshots.jpg" alt="Boudoir photography" class="service-card__img" loading="lazy" />
+              </div>
+              <div class="service-card__overlay"></div>
+              <div class="service-card__body">
+                <div class="service-card__accent" aria-hidden="true"></div>
+                <h3 class="service-card__title">Boudoir</h3>
+                <p class="service-card__desc">Tasteful, empowering imagery with intention.</p>
+                <a class="service-card__cta" href="#contact">Book Now →</a>
+              </div>
             </article>
 
-            <article class="card">
-              <h3 class="card__title">Maternity</h3>
-              <p class="card__desc">Soft light, strong emotion, beautiful legacy.</p>
+            <article class="service-card">
+              <div class="service-card__img-wrap">
+                <img src="./images/lifestyle.jpg" alt="Maternity photography" class="service-card__img" loading="lazy" />
+              </div>
+              <div class="service-card__overlay"></div>
+              <div class="service-card__body">
+                <div class="service-card__accent" aria-hidden="true"></div>
+                <h3 class="service-card__title">Maternity</h3>
+                <p class="service-card__desc">Soft light, strong emotion, beautiful legacy.</p>
+                <a class="service-card__cta" href="#contact">Book Now →</a>
+              </div>
             </article>
+
           </div>
         </div>
       </section>
 
+      <!-- ABOUT -->
       <section class="section section--about" id="about" aria-label="About">
         <div class="container about">
           <div class="about__left">
@@ -131,7 +192,7 @@
               BUILT ON INTENTION.
             </h2>
             <p class="about__lead">
-              TPM is a South Florida photography brand by D.Suave—focused on mood, movement, and meaning.
+              TPM is a South Florida photography brand by D.Suave — focused on mood, movement, and meaning.
             </p>
 
             <div class="about__stats" aria-label="Highlights">
@@ -151,27 +212,21 @@
           </div>
 
           <div class="about__right">
-            <h3 class="about__title">MORE ABOUT TPM</h3>
-            <p class="about__copy">
-              Whether its a destination wedding, a lifestyle portrait, or a special event, we go beyond simply taking
-              photos - we craft timeless visual narratives that speak to the heart. Let us bring your vision to life -
-              one frame of passion at a time.
-            </p>
-
-            <div class="about__actions">
-              <a class="btn btn--primary" href="#contact">BOOK NOW</a>
-              <a class="btn btn--ghost" href="#services">View Services</a>
+            <div class="about__img-stack" aria-hidden="true">
+              <img src="./images/creative.jpg" alt="" class="about__img about__img--back" />
+              <img src="./images/headshots.jpg" alt="" class="about__img about__img--front" />
             </div>
           </div>
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section class="section section--contact" id="contact" aria-label="Contact">
         <div class="container">
           <header class="section__header section__header--tight">
             <h2 class="section__title">BOOK YOUR SESSION</h2>
             <p class="section__subtitle">
-              Tell us what you’re envisioning. We’ll follow up with availability, pricing, and next steps.
+              Tell us what you're envisioning. We'll follow up with availability, pricing, and next steps.
             </p>
           </header>
 
