@@ -1,14 +1,14 @@
 :root {
   /* ── Palette ── */
-  --bg:        #0e0e0e;
-  --surface-1: #181818;
-  --surface-2: #212121;
-  --surface-3: #2a2a2a;
+  --bg:        #242424;
+  --surface-1: #2f2f2f;
+  --surface-2: #393939;
+  --surface-3: #454545;
   --text:      #ececec;
   --muted:     rgba(236, 236, 236, 0.65);
   --muted-2:   rgba(236, 236, 236, 0.42);
-  --line:      rgba(255, 255, 255, 0.10);
-  --line-hi:   rgba(255, 255, 255, 0.16);
+  --line:      rgba(255, 255, 255, 0.14);
+  --line-hi:   rgba(255, 255, 255, 0.23);
   --silver:    #c8c8c8;
   --accent:    #b8ff00;
   --accent-dim: rgba(184, 255, 0, 0.18);
@@ -88,7 +88,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* ── NAV ── */
 .site-header {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(14,14,14,0.82);
+  background: rgba(37,37,37,0.82);
   backdrop-filter: blur(18px) saturate(160%);
   border-bottom: 1px solid var(--line);
 }
@@ -151,13 +151,13 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .hero__bg-img {
   width: 100%; height: 100%;
   object-fit: cover; object-position: center 30%;
-  opacity: 0.5;
+  opacity: 0.65;
 }
 .hero__bg-overlay {
   position: absolute; inset: 0;
   background:
-    linear-gradient(to right, rgba(14,14,14,0.92) 0%, rgba(14,14,14,0.55) 55%, rgba(14,14,14,0.12) 100%),
-    linear-gradient(to top,   rgba(14,14,14,0.98) 0%, transparent 45%);
+    linear-gradient(to right, rgba(37,37,37,0.92) 0%, rgba(37,37,37,0.55) 55%, rgba(37,37,37,0.12) 100%),
+    linear-gradient(to top,   rgba(37,37,37,0.98) 0%, transparent 45%);
 }
 .hero__inner {
   position: relative; z-index: 2;
@@ -257,7 +257,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .about__img--front {
   width: 66%; height: 76%; bottom: 0; left: 0;
   border: 2px solid rgba(184,255,0,0.25);
-  outline: 5px solid rgba(14,14,14,0.7);
+  outline: 5px solid rgba(37,37,37,0.7);
 }
 .about__headline {
   font-family: var(--heading); font-weight: 800;
@@ -325,7 +325,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .footer {
   padding: 28px 0 36px;
   border-top: 1px solid var(--line);
-  background: rgba(10,10,10,0.9);
+  background: rgba(25,25,25,0.95);
 }
 .footer__inner { display: grid; grid-template-columns: 1fr; gap: 16px; align-items: center; }
 .footer__headline {
@@ -370,13 +370,13 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .cat-hero__img {
   width: 100%; height: 100%;
   object-fit: cover; object-position: center;
-  opacity: 0.55;
+  opacity: 0.7;
 }
 .cat-hero__overlay {
   position: absolute; inset: 0;
   background:
-    linear-gradient(to top,  rgba(14,14,14,0.98) 0%,  rgba(14,14,14,0.4) 50%, rgba(14,14,14,0.05) 100%),
-    linear-gradient(to right, rgba(14,14,14,0.7) 0%, transparent 60%);
+    linear-gradient(to top,  rgba(37,37,37,0.98) 0%,  rgba(37,37,37,0.4) 50%, rgba(37,37,37,0.05) 100%),
+    linear-gradient(to right, rgba(37,37,37,0.7) 0%, transparent 60%);
 }
 .cat-hero__body  { position: relative; z-index: 2; }
 .cat-hero__label {
@@ -495,7 +495,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .service-detail__preview-badge {
   position: absolute; bottom: 16px; left: 16px;
   padding: 8px 14px; border-radius: 999px;
-  background: rgba(14,14,14,0.82); backdrop-filter: blur(10px);
+  background: rgba(37,37,37,0.82); backdrop-filter: blur(10px);
   border: 1px solid var(--line);
   font-family: var(--heading); font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.14em;
