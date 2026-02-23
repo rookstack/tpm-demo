@@ -88,7 +88,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* ── NAV ── */
 .site-header {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(37,37,37,0.82);
+  background: rgba(0,0,0,0.82);
   backdrop-filter: blur(18px) saturate(160%);
   border-bottom: 1px solid var(--line);
 }
@@ -156,8 +156,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .hero__bg-overlay {
   position: absolute; inset: 0;
   background:
-    linear-gradient(to right, rgba(37,37,37,0.92) 0%, rgba(37,37,37,0.55) 55%, rgba(37,37,37,0.12) 100%),
-    linear-gradient(to top,   rgba(37,37,37,0.98) 0%, transparent 45%);
+    linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.12) 100%),
+    linear-gradient(to top,   rgba(0,0,0,0.98) 0%, transparent 45%);
 }
 .hero__inner {
   position: relative; z-index: 2;
@@ -257,7 +257,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .about__img--front {
   width: 66%; height: 76%; bottom: 0; left: 0;
   border: 2px solid rgba(184,255,0,0.25);
-  outline: 5px solid rgba(37,37,37,0.7);
+  outline: 5px solid rgba(0,0,0,0.7);
 }
 .about__headline {
   font-family: var(--heading); font-weight: 800;
@@ -375,8 +375,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .cat-hero__overlay {
   position: absolute; inset: 0;
   background:
-    linear-gradient(to top,  rgba(37,37,37,0.98) 0%,  rgba(37,37,37,0.4) 50%, rgba(37,37,37,0.05) 100%),
-    linear-gradient(to right, rgba(37,37,37,0.7) 0%, transparent 60%);
+    linear-gradient(to top,  rgba(0,0,0,0.98) 0%,  rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.05) 100%),
+    linear-gradient(to right, rgba(0,0,0,0.7) 0%, transparent 60%);
 }
 .cat-hero__body  { position: relative; z-index: 2; }
 .cat-hero__label {
@@ -495,7 +495,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .service-detail__preview-badge {
   position: absolute; bottom: 16px; left: 16px;
   padding: 8px 14px; border-radius: 999px;
-  background: rgba(37,37,37,0.82); backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.82); backdrop-filter: blur(10px);
   border: 1px solid var(--line);
   font-family: var(--heading); font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.14em;
@@ -574,3 +574,65 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .service-card:hover .service-card__img,
   .gallery-item:hover img { transform: none !important; }
 }
+
+/* ══════════════════════════════════════
+   LIGHT THEME
+   ══════════════════════════════════════ */
+
+[data-theme="light"] {
+  --bg:        #f0f0f0;
+  --surface-1: #ffffff;
+  --surface-2: #e6e6e6;
+  --surface-3: #d8d8d8;
+  --text:      #141414;
+  --muted:     rgba(20, 20, 20, 0.60);
+  --muted-2:   rgba(20, 20, 20, 0.38);
+  --line:      rgba(0, 0, 0, 0.10);
+  --line-hi:   rgba(0, 0, 0, 0.18);
+  --shadow-sm: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow:    0 16px 48px rgba(0,0,0,0.10);
+  --shadow-lg: 0 24px 72px rgba(0,0,0,0.14);
+}
+
+[data-theme="light"] body {
+  background:
+    radial-gradient(ellipse 1400px 500px at 50% -80px, rgba(184,255,0,0.08) 0%, transparent 65%),
+    var(--bg);
+}
+
+/* Accent text (eyebrow labels) — #b8ff00 is too light on white, use dark green */
+[data-theme="light"] .eyebrow:not(.eyebrow--muted)        { color: #4d7c00; }
+[data-theme="light"] .service-detail__includes-title      { color: #4d7c00; }
+[data-theme="light"] .footer__headline                    { color: #4d7c00; }
+[data-theme="light"] .cat-hero__label                     { color: var(--accent); } /* on photo — fine */
+[data-theme="light"] .brand__mark                         { box-shadow: 0 0 12px rgba(77,124,0,0.35); }
+[data-theme="light"] .service-card__cta                   { color: #4d7c00; }
+[data-theme="light"] .service-detail__preview-badge       { background: rgba(240,240,240,0.88); color: #4d7c00; }
+[data-theme="light"] .footer__back:hover                  { color: #4d7c00; }
+[data-theme="light"] .includes-list li::before            { background: #4d7c00; }
+
+/* Cards/surfaces get a subtle border lift */
+[data-theme="light"] .service-card { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+[data-theme="light"] .gallery-item { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+/* Buttons */
+[data-theme="light"] .btn--ghost { border-color: rgba(0,0,0,0.18); }
+[data-theme="light"] .btn--outline { border-color: rgba(0,0,0,0.18); }
+
+/* ── THEME TOGGLE BUTTON ── */
+.theme-toggle {
+  display: flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%;
+  border: 1px solid var(--line-hi);
+  background: var(--surface-2);
+  cursor: pointer; font-size: 16px; line-height: 1;
+  flex-shrink: 0;
+  transition: background 200ms, border-color 200ms, transform 200ms var(--ease), box-shadow 200ms;
+}
+.theme-toggle:hover {
+  background: var(--surface-3);
+  transform: scale(1.08);
+  box-shadow: var(--shadow-sm);
+}
+.theme-toggle:active { transform: scale(0.96); }
+

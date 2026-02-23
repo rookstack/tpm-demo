@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,6 +33,7 @@
         <div class="nav__links">
           <a class="nav__link" href="#about">About</a>
           <a class="nav__link" href="#services">Services</a>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode" title="Toggle theme">☀️</button>
           <a class="btn btn--primary btn--sm" href="#contact">Book Now</a>
         </div>
       </nav>
@@ -304,5 +305,28 @@
         })();
       </script>
     </footer>
+    <script>
+      (function () {
+        var html = document.documentElement;
+        var stored = localStorage.getItem('tpm-theme');
+        var theme = stored || 'dark';
+        html.setAttribute('data-theme', theme);
+        function sync(btn, t) {
+          if (!btn) return;
+          btn.textContent = t === 'dark' ? '☀️' : '🌙';
+          btn.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          var btn = document.getElementById('theme-toggle');
+          sync(btn, theme);
+          if (btn) btn.addEventListener('click', function () {
+            theme = theme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', theme);
+            localStorage.setItem('tpm-theme', theme);
+            sync(btn, theme);
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
