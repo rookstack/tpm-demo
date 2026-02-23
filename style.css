@@ -1,14 +1,14 @@
 :root {
   /* ── Palette ── */
-  --bg:        #242424;
-  --surface-1: #2f2f2f;
-  --surface-2: #393939;
-  --surface-3: #454545;
-  --text:      #ececec;
-  --muted:     rgba(236, 236, 236, 0.65);
-  --muted-2:   rgba(236, 236, 236, 0.42);
-  --line:      rgba(255, 255, 255, 0.14);
-  --line-hi:   rgba(255, 255, 255, 0.23);
+  --bg:        #0f172a;
+  --surface-1: #1e293b;
+  --surface-2: #273548;
+  --surface-3: #334155;
+  --text:      #e2e8f0;
+  --muted:     rgba(226, 232, 240, 0.62);
+  --muted-2:   rgba(226, 232, 240, 0.38);
+  --line:      rgba(148, 163, 184, 0.18);
+  --line-hi:   rgba(148, 163, 184, 0.30);
   --silver:    #c8c8c8;
   --accent:    #b8ff00;
   --accent-dim: rgba(184, 255, 0, 0.18);
@@ -30,8 +30,9 @@
 html  { scroll-behavior: smooth; }
 body  {
   background:
-    radial-gradient(ellipse 1400px 600px at 50% -80px, rgba(184,255,0,0.055) 0%, transparent 70%),
-    radial-gradient(ellipse 900px 500px at 90% 40%,   rgba(200,200,200,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 1600px 700px at 50% -100px, rgba(184,255,0,0.07)  0%, transparent 65%),
+    radial-gradient(ellipse 1000px 600px at 95%  30%,   rgba(99,120,167,0.14)  0%, transparent 60%),
+    radial-gradient(ellipse 800px  500px at  5%  70%,   rgba(51, 65, 100,0.10) 0%, transparent 55%),
     var(--bg);
   color: var(--text);
   font-family: var(--body);
