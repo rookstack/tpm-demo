@@ -650,6 +650,55 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .btn--ghost   { border-color: rgba(0,0,0,0.18); }
 .btn--outline { border-color: rgba(0,0,0,0.18); }
 
+/* ── LIGHTBOX ── */
+#lb-overlay {
+  display: none;
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,0.93);
+  align-items: center; justify-content: center;
+  padding: 20px;
+}
+#lb-overlay.lb-active { display: flex; }
+
+#lb-img {
+  max-width: 100%; max-height: 90vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.7);
+  opacity: 1;
+  transition: opacity 150ms ease;
+}
+
+#lb-close {
+  position: fixed; top: 16px; right: 20px;
+  background: none; border: none;
+  color: #fff; font-size: 36px; line-height: 1;
+  cursor: pointer; opacity: 0.8;
+  transition: opacity 160ms;
+  z-index: 10000;
+}
+#lb-close:hover { opacity: 1; }
+
+#lb-prev, #lb-next {
+  position: fixed; top: 50%; transform: translateY(-50%);
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+  color: #fff; font-size: 22px; line-height: 1;
+  width: 44px; height: 44px; border-radius: 50%;
+  cursor: pointer; opacity: 0.75;
+  transition: opacity 160ms, background 160ms;
+  z-index: 10000;
+}
+#lb-prev { left: 14px; }
+#lb-next { right: 14px; }
+#lb-prev:hover, #lb-next:hover { opacity: 1; background: rgba(255,255,255,0.16); }
+
+#lb-counter {
+  position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
+  color: rgba(255,255,255,0.55); font-family: var(--heading);
+  font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+  z-index: 10000;
+}
+
 /* ── THEME TOGGLE BUTTON ── */
 .theme-toggle {
   display: flex; align-items: center; justify-content: center;
