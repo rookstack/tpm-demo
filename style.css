@@ -167,9 +167,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
   text-transform: uppercase; letter-spacing: 0.04em;
   font-size: 60px; line-height: 0.92;
   margin-bottom: 18px;
+  color: #fff;
 }
 .hero__subtitle {
-  color: var(--muted); max-width: 42ch; font-size: 16px; margin-bottom: 28px;
+  color: rgba(255,255,255,0.75); max-width: 42ch; font-size: 16px; margin-bottom: 28px;
 }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .hero__fade {
