@@ -648,6 +648,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .service-detail__preview-badge         { background: rgba(240,240,240,0.88); color: #5a8a00; }
 .breadcrumb a:hover                    { color: #5a8a00; }
 .brand__mark                           { box-shadow: 0 0 12px rgba(90,138,0,0.35); }
+.contact__phone a                      { color: #5a8a00; }
 
 /* Overrides for elements on dark photo backgrounds — lime is fine */
 .cat-hero__label                       { color: #c0fc00; }
@@ -658,6 +659,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 [data-theme="dark"] .service-detail__includes-title { color: #c0fc00; }
 [data-theme="dark"] .service-card__cta             { color: #c0fc00; }
 [data-theme="dark"] .breadcrumb a:hover            { color: #c0fc00; }
+[data-theme="dark"] .contact__phone a              { color: #c0fc00; }
 [data-theme="dark"] .brand__mark                   { box-shadow: 0 0 12px rgba(192,252,0,0.35); }
 
 /* Cards/surfaces subtle lift in light */
