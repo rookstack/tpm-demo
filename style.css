@@ -116,6 +116,18 @@ button, input, select, textarea { font: inherit; color: inherit; }
   transition: color 160ms, background 160ms;
 }
 .nav__link:hover { color: var(--text); background: var(--surface-2); }
+.nav__phone {
+  font-family: var(--body); font-size: 13px; font-weight: 500;
+  color: var(--muted); letter-spacing: 0.04em;
+  padding: 6px 10px; white-space: nowrap;
+  transition: color 0.2s;
+}
+.nav__phone:hover { color: var(--accent); }
+.contact__phone {
+  font-size: 14px; color: var(--muted); margin-top: 10px;
+}
+.contact__phone a { color: var(--accent); font-weight: 600; }
+.contact__phone a:hover { text-decoration: underline; }
 
 /* ── BUTTONS ── */
 .btn {
