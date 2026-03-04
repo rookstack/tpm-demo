@@ -186,6 +186,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
   color: rgba(255,255,255,0.75); max-width: 42ch; font-size: 16px; margin-bottom: 28px;
 }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.hero__actions .btn--ghost,
+.hero__actions .btn--outline { color: #fff !important; border-color: rgba(255,255,255,0.45); }
+.hero__actions .btn--ghost:hover,
+.hero__actions .btn--outline:hover { border-color: rgba(255,255,255,0.8); }
 .hero__fade {
   position: absolute; inset: auto 0 0; height: 160px;
   background: linear-gradient(to top, var(--bg) 0%, transparent 100%);
