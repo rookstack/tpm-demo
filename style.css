@@ -21,7 +21,7 @@
   --radius-sm: 10px;
   --container: 1140px;
   --pad:       20px;
-  --heading:   "Josefin Sans", system-ui, -apple-system, sans-serif;
+  --heading:   "Jost", system-ui, -apple-system, sans-serif;
   --body:      "Inter", system-ui, -apple-system, sans-serif;
   --ease:      cubic-bezier(0.22, 1, 0.36, 1);
 }
