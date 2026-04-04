@@ -270,22 +270,22 @@
           <form class="form" action="https://formspree.io/f/xeerjwjk" method="POST">
             <input type="hidden" name="_subject" value="New Booking Inquiry — ThoughtProcess Media" />
             <div class="form__grid">
-              <div class="field">
+              <div class="field field--required">
                 <label class="field__label" for="name">Name</label>
                 <input class="field__input" id="name" name="name" type="text" autocomplete="name" required />
               </div>
 
-              <div class="field">
+              <div class="field field--required">
                 <label class="field__label" for="phone">Phone Number</label>
                 <input class="field__input" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(561) 000-0000" required />
               </div>
 
-              <div class="field">
+              <div class="field field--required">
                 <label class="field__label" for="email">Email</label>
                 <input class="field__input" id="email" name="email" type="email" autocomplete="email" required />
               </div>
 
-              <div class="field field--full">
+              <div class="field field--full field--required">
                 <label class="field__label" for="service">Service</label>
                 <select class="field__input field__select" id="service" name="service" required>
                   <option value="" selected disabled>Select a service</option>
@@ -303,7 +303,7 @@
                 </select>
               </div>
 
-              <div class="field field--full">
+              <div class="field field--full field--required">
                 <label class="field__label" for="message">Message</label>
                 <textarea
                   class="field__input field__textarea"
